@@ -92,6 +92,7 @@ document.addEventListener("submit", function (e) {
   const name = form.querySelector("[name=name]");
   const email = form.querySelector("[name=email]");
   const message = form.querySelector("[name=message]");
+  const messageError = form.querySelector(".message-error");
   let valid = true;
   form.querySelectorAll(".form-error").forEach((el) => (el.textContent = ""));
   if (!name.value) {
@@ -102,8 +103,8 @@ document.addEventListener("submit", function (e) {
     form.querySelector(".email-error").textContent = "Valid email required";
     valid = false;
   }
-  if (!message.value) {
-    form.querySelector(".message-error").textContent = "Message required";
+  if (message && !message.value) {
+    if (messageError) messageError.textContent = "Message required";
     valid = false;
   }
   if (valid) {
