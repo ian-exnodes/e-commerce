@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "image": "https://placehold.co/600x400",
+    "price": 12.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 1."
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "image": "https://placehold.co/600x400",
+    "price": 15.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 2."
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "image": "https://placehold.co/600x400",
+    "price": 17.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 3."
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "image": "https://placehold.co/600x400",
+    "price": 20.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 4."
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "image": "https://placehold.co/600x400",
+    "price": 22.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 5."
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "image": "https://placehold.co/600x400",
+    "price": 25.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 6."
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "image": "https://placehold.co/600x400",
+    "price": 27.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 7."
+  },
+  {
+    "id": 8,
+    "name": "Product 8",
+    "image": "https://placehold.co/600x400",
+    "price": 30.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 8."
+  },
+  {
+    "id": 9,
+    "name": "Product 9",
+    "image": "https://placehold.co/600x400",
+    "price": 32.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 9."
+  },
+  {
+    "id": 10,
+    "name": "Product 10",
+    "image": "https://placehold.co/600x400",
+    "price": 35.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 10."
+  },
+  {
+    "id": 11,
+    "name": "Product 11",
+    "image": "https://placehold.co/600x400",
+    "price": 37.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 11."
+  },
+  {
+    "id": 12,
+    "name": "Product 12",
+    "image": "https://placehold.co/600x400",
+    "price": 40.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 12."
+  },
+  {
+    "id": 13,
+    "name": "Product 13",
+    "image": "https://placehold.co/600x400",
+    "price": 42.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 13."
+  },
+  {
+    "id": 14,
+    "name": "Product 14",
+    "image": "https://placehold.co/600x400",
+    "price": 45.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 14."
+  },
+  {
+    "id": 15,
+    "name": "Product 15",
+    "image": "https://placehold.co/600x400",
+    "price": 47.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 15."
+  },
+  {
+    "id": 16,
+    "name": "Product 16",
+    "image": "https://placehold.co/600x400",
+    "price": 50.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 16."
+  },
+  {
+    "id": 17,
+    "name": "Product 17",
+    "image": "https://placehold.co/600x400",
+    "price": 52.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 17."
+  },
+  {
+    "id": 18,
+    "name": "Product 18",
+    "image": "https://placehold.co/600x400",
+    "price": 55.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 18."
+  },
+  {
+    "id": 19,
+    "name": "Product 19",
+    "image": "https://placehold.co/600x400",
+    "price": 57.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 19."
+  },
+  {
+    "id": 20,
+    "name": "Product 20",
+    "image": "https://placehold.co/600x400",
+    "price": 60.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 20."
+  },
+  {
+    "id": 21,
+    "name": "Product 21",
+    "image": "https://placehold.co/600x400",
+    "price": 62.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 21."
+  },
+  {
+    "id": 22,
+    "name": "Product 22",
+    "image": "https://placehold.co/600x400",
+    "price": 65.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 22."
+  },
+  {
+    "id": 23,
+    "name": "Product 23",
+    "image": "https://placehold.co/600x400",
+    "price": 67.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 23."
+  },
+  {
+    "id": 24,
+    "name": "Product 24",
+    "image": "https://placehold.co/600x400",
+    "price": 70.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 24."
+  },
+  {
+    "id": 25,
+    "name": "Product 25",
+    "image": "https://placehold.co/600x400",
+    "price": 72.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 25."
+  },
+  {
+    "id": 26,
+    "name": "Product 26",
+    "image": "https://placehold.co/600x400",
+    "price": 75.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 26."
+  },
+  {
+    "id": 27,
+    "name": "Product 27",
+    "image": "https://placehold.co/600x400",
+    "price": 77.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 27."
+  },
+  {
+    "id": 28,
+    "name": "Product 28",
+    "image": "https://placehold.co/600x400",
+    "price": 80.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 28."
+  },
+  {
+    "id": 29,
+    "name": "Product 29",
+    "image": "https://placehold.co/600x400",
+    "price": 82.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 29."
+  },
+  {
+    "id": 30,
+    "name": "Product 30",
+    "image": "https://placehold.co/600x400",
+    "price": 85.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 30."
+  },
+  {
+    "id": 31,
+    "name": "Product 31",
+    "image": "https://placehold.co/600x400",
+    "price": 87.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 31."
+  },
+  {
+    "id": 32,
+    "name": "Product 32",
+    "image": "https://placehold.co/600x400",
+    "price": 90.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 32."
+  },
+  {
+    "id": 33,
+    "name": "Product 33",
+    "image": "https://placehold.co/600x400",
+    "price": 92.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 33."
+  },
+  {
+    "id": 34,
+    "name": "Product 34",
+    "image": "https://placehold.co/600x400",
+    "price": 95.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 34."
+  },
+  {
+    "id": 35,
+    "name": "Product 35",
+    "image": "https://placehold.co/600x400",
+    "price": 97.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 35."
+  },
+  {
+    "id": 36,
+    "name": "Product 36",
+    "image": "https://placehold.co/600x400",
+    "price": 100.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 36."
+  },
+  {
+    "id": 37,
+    "name": "Product 37",
+    "image": "https://placehold.co/600x400",
+    "price": 102.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 37."
+  },
+  {
+    "id": 38,
+    "name": "Product 38",
+    "image": "https://placehold.co/600x400",
+    "price": 105.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 38."
+  },
+  {
+    "id": 39,
+    "name": "Product 39",
+    "image": "https://placehold.co/600x400",
+    "price": 107.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 39."
+  },
+  {
+    "id": 40,
+    "name": "Product 40",
+    "image": "https://placehold.co/600x400",
+    "price": 110.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 40."
+  },
+  {
+    "id": 41,
+    "name": "Product 41",
+    "image": "https://placehold.co/600x400",
+    "price": 112.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 41."
+  },
+  {
+    "id": 42,
+    "name": "Product 42",
+    "image": "https://placehold.co/600x400",
+    "price": 115.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 42."
+  },
+  {
+    "id": 43,
+    "name": "Product 43",
+    "image": "https://placehold.co/600x400",
+    "price": 117.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 43."
+  },
+  {
+    "id": 44,
+    "name": "Product 44",
+    "image": "https://placehold.co/600x400",
+    "price": 120.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 44."
+  },
+  {
+    "id": 45,
+    "name": "Product 45",
+    "image": "https://placehold.co/600x400",
+    "price": 122.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 45."
+  },
+  {
+    "id": 46,
+    "name": "Product 46",
+    "image": "https://placehold.co/600x400",
+    "price": 125.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 46."
+  },
+  {
+    "id": 47,
+    "name": "Product 47",
+    "image": "https://placehold.co/600x400",
+    "price": 127.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 47."
+  },
+  {
+    "id": 48,
+    "name": "Product 48",
+    "image": "https://placehold.co/600x400",
+    "price": 130.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 48."
+  },
+  {
+    "id": 49,
+    "name": "Product 49",
+    "image": "https://placehold.co/600x400",
+    "price": 132.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 49."
+  },
+  {
+    "id": 50,
+    "name": "Product 50",
+    "image": "https://placehold.co/600x400",
+    "price": 135.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 50."
+  },
+  {
+    "id": 51,
+    "name": "Product 51",
+    "image": "https://placehold.co/600x400",
+    "price": 137.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 51."
+  },
+  {
+    "id": 52,
+    "name": "Product 52",
+    "image": "https://placehold.co/600x400",
+    "price": 140.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 52."
+  },
+  {
+    "id": 53,
+    "name": "Product 53",
+    "image": "https://placehold.co/600x400",
+    "price": 142.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 53."
+  },
+  {
+    "id": 54,
+    "name": "Product 54",
+    "image": "https://placehold.co/600x400",
+    "price": 145.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 54."
+  },
+  {
+    "id": 55,
+    "name": "Product 55",
+    "image": "https://placehold.co/600x400",
+    "price": 147.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 55."
+  },
+  {
+    "id": 56,
+    "name": "Product 56",
+    "image": "https://placehold.co/600x400",
+    "price": 150.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 56."
+  },
+  {
+    "id": 57,
+    "name": "Product 57",
+    "image": "https://placehold.co/600x400",
+    "price": 152.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 57."
+  },
+  {
+    "id": 58,
+    "name": "Product 58",
+    "image": "https://placehold.co/600x400",
+    "price": 155.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 58."
+  },
+  {
+    "id": 59,
+    "name": "Product 59",
+    "image": "https://placehold.co/600x400",
+    "price": 157.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 59."
+  },
+  {
+    "id": 60,
+    "name": "Product 60",
+    "image": "https://placehold.co/600x400",
+    "price": 160.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 60."
+  },
+  {
+    "id": 61,
+    "name": "Product 61",
+    "image": "https://placehold.co/600x400",
+    "price": 162.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 61."
+  },
+  {
+    "id": 62,
+    "name": "Product 62",
+    "image": "https://placehold.co/600x400",
+    "price": 165.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 62."
+  },
+  {
+    "id": 63,
+    "name": "Product 63",
+    "image": "https://placehold.co/600x400",
+    "price": 167.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 63."
+  },
+  {
+    "id": 64,
+    "name": "Product 64",
+    "image": "https://placehold.co/600x400",
+    "price": 170.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 64."
+  },
+  {
+    "id": 65,
+    "name": "Product 65",
+    "image": "https://placehold.co/600x400",
+    "price": 172.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 65."
+  },
+  {
+    "id": 66,
+    "name": "Product 66",
+    "image": "https://placehold.co/600x400",
+    "price": 175.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 66."
+  },
+  {
+    "id": 67,
+    "name": "Product 67",
+    "image": "https://placehold.co/600x400",
+    "price": 177.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 67."
+  },
+  {
+    "id": 68,
+    "name": "Product 68",
+    "image": "https://placehold.co/600x400",
+    "price": 180.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 68."
+  },
+  {
+    "id": 69,
+    "name": "Product 69",
+    "image": "https://placehold.co/600x400",
+    "price": 182.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 69."
+  },
+  {
+    "id": 70,
+    "name": "Product 70",
+    "image": "https://placehold.co/600x400",
+    "price": 185.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 70."
+  },
+  {
+    "id": 71,
+    "name": "Product 71",
+    "image": "https://placehold.co/600x400",
+    "price": 187.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 71."
+  },
+  {
+    "id": 72,
+    "name": "Product 72",
+    "image": "https://placehold.co/600x400",
+    "price": 190.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 72."
+  },
+  {
+    "id": 73,
+    "name": "Product 73",
+    "image": "https://placehold.co/600x400",
+    "price": 192.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 73."
+  },
+  {
+    "id": 74,
+    "name": "Product 74",
+    "image": "https://placehold.co/600x400",
+    "price": 195.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 74."
+  },
+  {
+    "id": 75,
+    "name": "Product 75",
+    "image": "https://placehold.co/600x400",
+    "price": 197.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 75."
+  },
+  {
+    "id": 76,
+    "name": "Product 76",
+    "image": "https://placehold.co/600x400",
+    "price": 200.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 76."
+  },
+  {
+    "id": 77,
+    "name": "Product 77",
+    "image": "https://placehold.co/600x400",
+    "price": 202.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 77."
+  },
+  {
+    "id": 78,
+    "name": "Product 78",
+    "image": "https://placehold.co/600x400",
+    "price": 205.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 78."
+  },
+  {
+    "id": 79,
+    "name": "Product 79",
+    "image": "https://placehold.co/600x400",
+    "price": 207.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 79."
+  },
+  {
+    "id": 80,
+    "name": "Product 80",
+    "image": "https://placehold.co/600x400",
+    "price": 210.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 80."
+  },
+  {
+    "id": 81,
+    "name": "Product 81",
+    "image": "https://placehold.co/600x400",
+    "price": 212.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 81."
+  },
+  {
+    "id": 82,
+    "name": "Product 82",
+    "image": "https://placehold.co/600x400",
+    "price": 215.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 82."
+  },
+  {
+    "id": 83,
+    "name": "Product 83",
+    "image": "https://placehold.co/600x400",
+    "price": 217.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 83."
+  },
+  {
+    "id": 84,
+    "name": "Product 84",
+    "image": "https://placehold.co/600x400",
+    "price": 220.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 84."
+  },
+  {
+    "id": 85,
+    "name": "Product 85",
+    "image": "https://placehold.co/600x400",
+    "price": 222.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 85."
+  },
+  {
+    "id": 86,
+    "name": "Product 86",
+    "image": "https://placehold.co/600x400",
+    "price": 225.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 86."
+  },
+  {
+    "id": 87,
+    "name": "Product 87",
+    "image": "https://placehold.co/600x400",
+    "price": 227.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 87."
+  },
+  {
+    "id": 88,
+    "name": "Product 88",
+    "image": "https://placehold.co/600x400",
+    "price": 230.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 88."
+  },
+  {
+    "id": 89,
+    "name": "Product 89",
+    "image": "https://placehold.co/600x400",
+    "price": 232.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 89."
+  },
+  {
+    "id": 90,
+    "name": "Product 90",
+    "image": "https://placehold.co/600x400",
+    "price": 235.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 90."
+  },
+  {
+    "id": 91,
+    "name": "Product 91",
+    "image": "https://placehold.co/600x400",
+    "price": 237.5,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 91."
+  },
+  {
+    "id": 92,
+    "name": "Product 92",
+    "image": "https://placehold.co/600x400",
+    "price": 240.0,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 92."
+  },
+  {
+    "id": 93,
+    "name": "Product 93",
+    "image": "https://placehold.co/600x400",
+    "price": 242.5,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 93."
+  },
+  {
+    "id": 94,
+    "name": "Product 94",
+    "image": "https://placehold.co/600x400",
+    "price": 245.0,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 94."
+  },
+  {
+    "id": 95,
+    "name": "Product 95",
+    "image": "https://placehold.co/600x400",
+    "price": 247.5,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 95."
+  },
+  {
+    "id": 96,
+    "name": "Product 96",
+    "image": "https://placehold.co/600x400",
+    "price": 250.0,
+    "category": "Category2",
+    "rating": 2,
+    "description": "This is a description for product 96."
+  },
+  {
+    "id": 97,
+    "name": "Product 97",
+    "image": "https://placehold.co/600x400",
+    "price": 252.5,
+    "category": "Category3",
+    "rating": 3,
+    "description": "This is a description for product 97."
+  },
+  {
+    "id": 98,
+    "name": "Product 98",
+    "image": "https://placehold.co/600x400",
+    "price": 255.0,
+    "category": "Category4",
+    "rating": 4,
+    "description": "This is a description for product 98."
+  },
+  {
+    "id": 99,
+    "name": "Product 99",
+    "image": "https://placehold.co/600x400",
+    "price": 257.5,
+    "category": "Category5",
+    "rating": 5,
+    "description": "This is a description for product 99."
+  },
+  {
+    "id": 100,
+    "name": "Product 100",
+    "image": "https://placehold.co/600x400",
+    "price": 260.0,
+    "category": "Category1",
+    "rating": 1,
+    "description": "This is a description for product 100."
+  }
+]
