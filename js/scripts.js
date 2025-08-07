@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCart();
   faqToggle();
   bannerSlider();
+  updateCartCount();
 });
 
 // State variables for the product page
@@ -225,6 +226,19 @@ function getCart() {
 function saveCart(cart) {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
+function updateCartCount() {
+  const cartLink = document.querySelector('a[href="cart.html"]');
+  if (!cartLink) return;
+  let countSpan = cartLink.querySelector('.cart-count');
+  if (!countSpan) {
+    countSpan = document.createElement('span');
+    countSpan.className = 'cart-count';
+    cartLink.appendChild(countSpan);
+  }
+  const count = getCart().length;
+  countSpan.textContent = count;
+  countSpan.style.display = count > 0 ? 'inline-block' : 'none';
+}
 function addToCart(id) {
   const cart = getCart();
   // Prevent duplicates, instead, you might want to handle quantity later
@@ -232,6 +246,7 @@ function addToCart(id) {
     cart.push(id);
   }
   saveCart(cart);
+  updateCartCount();
   alert("Sản phẩm đã được thêm vào giỏ hàng");
 }
 
@@ -283,6 +298,7 @@ async function renderCart() {
     `
     )
     .join("");
+  updateCartCount();
 }
 
 // Helper to load products for details and cart pages
