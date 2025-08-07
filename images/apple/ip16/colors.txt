@@ -1,0 +1,5 @@
+Xanh Lưu Ly = ultramarine
+Xanh Mòng Két = teal
+Hồng = pink
+Trắng = white
+Đen = black

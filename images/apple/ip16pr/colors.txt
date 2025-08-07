@@ -1,0 +1,4 @@
+Titan Sa Mạc = deserttitanium
+Titan Tự Nhiên = naturaltitanium
+Titan Trắng = whitetitanium
+Titan Đen = blacktitanium
