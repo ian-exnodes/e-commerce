@@ -250,6 +250,13 @@ function addToCart(id) {
   alert("Sản phẩm đã được thêm vào giỏ hàng");
 }
 
+function removeFromCart(id) {
+  const cart = getCart().filter(itemId => itemId !== id);
+  saveCart(cart);
+  renderCart();
+  updateCartCount();
+}
+
 async function renderProductDetails() {
   const container = document.getElementById("product-detail");
   if (!container) return;
@@ -293,6 +300,7 @@ async function renderCart() {
         <div>
           <h4>${p.name}</h4>
           <p>$${p.price.toFixed(2)}</p>
+          <button onclick="removeFromCart(${p.id})">Xóa</button>
         </div>
       </div>
     `
