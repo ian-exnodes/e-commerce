@@ -322,74 +322,72 @@ button:hover {
   gap: 10px;
 }
 
-/* Banner Slider */
+/* Banner */
 .banner {
-      width: 100%;
-      height: 200px;
-      display: flex;
-      background: linear-gradient(90deg, #a2d5f2 0%, #7ec8e3 50%, #5aa9d6 100%);
-      color: #00334e; /* xanh đậm để nổi trên nền pastel */
-      padding: 30px;
-      box-sizing: border-box;
-      align-items: center;
-    }
-    .banner-text {
-      flex: 1.2;
-    }
-    .banner-text h2 {
-      margin: 0;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    .banner-text h1 {
-      margin: 0;
-      font-size: 50px;
-      color: #ff6f61; /* đỏ san hô đậm để nổi bật */
-    }
-    .banner-text p {
-      margin: 8px 0;
-      font-size: 17px;
-    }
-    .hotline {
-      background: #ffd166; /* vàng pastel */
-      color: #00334e;
-      padding: 8px 12px;
-      display: inline-block;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .banner-image {
-      flex: 0.8;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    .banner-image img {
-      height: 200px; /* tăng kích thước ảnh */
-      width: 390px;
-      border-radius: 4px;
-    }
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-     /* Slider */
-  .slider-header {
+.banner-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #ffeaa7;
+}
+
+.banner-text p {
+  margin-bottom: 15px;
+}
+
+.hotline {
+  background: #ffeaa7;
+  color: #00334e;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.banner-image img {
+  max-height: 260px;
+  width: auto;
+  border-radius: 8px;
+}
+
+/* Slider */
+.slider-header {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-    width: 100%;
-      height: 230px;
-      overflow: hidden;
-      position: relative;
-      background: #a2d5f2; /* xanh biển pastel */
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .main-slider {
   flex: 2;
   position: relative;
-  overflow: hidden;
   height: 300px;
+  overflow: hidden;
 }
+
 .main-slider .slide {
   position: absolute;
   width: 100%;
@@ -397,33 +395,48 @@ button:hover {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity .6s ease;
+  transition: opacity 0.6s ease;
 }
-.main-slider .slide.active { opacity: 1; }
+
+.main-slider .slide.active {
+  opacity: 1;
+}
+
 .text-slider {
   flex: 1;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
+  background: #f8f9fa;
 }
+
 .text-slide {
   display: none;
   text-align: left;
-   color: #ff6f61;
 }
-.text-slide.active { display: block; }
-.text-slide h2 { font-size: 1.8rem; color: #ff6f61; }
+
+.text-slide.active {
+  display: block;
+}
+
+.text-slide h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
 .text-slide button {
-  margin-top: .5rem;
-  padding: .7rem 1.5rem;
-  background: #F39C12;
+  padding: 0.7rem 1.5rem;
+  background: #4facfe;
   border: none;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
-  transition: background .3s, transform .2s;
+  transition: background 0.3s, transform 0.2s;
 }
+
 .text-slide button:hover {
-  background: #d88f0e;
+  background: #00c6ff;
   transform: scale(1.05);
 }
