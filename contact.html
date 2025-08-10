@@ -7,7 +7,12 @@
   <meta name="description" content="Liên hệ ElectroShop" />
   <meta name="keywords" content="biểu mẫu liên hệ" />
   <title>Liên hệ - ElectroShop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -26,21 +31,31 @@
   </header>
   <main class="container">
     <h2>Liên hệ với chúng tôi</h2>
-    <form class="needs-validation">
-      <label>Tên<input type="text" name="name" /></label>
-      <div class="form-error name-error"></div>
-      <label>Email<input type="email" name="email" /></label>
-      <div class="form-error email-error"></div>
-      <label>Đăng ký nhận tin<input type="checkbox" name="subscribe" /></label>
-      <label>Lời nhắn<textarea name="message"></textarea></label>
-      <div class="form-error message-error"></div>
-      <button type="submit">Gửi</button>
-    </form>
+    <div class="contact-form-container">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Tên</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Lời nhắn</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <label for="subscribe">Đăng ký nhận tin</label>
+        </div>
+        <button type="submit">Gửi</button>
+      </form>
+    </div>
   </main>
   <footer>
     <p>
-      &copy; 2025 ElectroShop -
-      <a href="mailto:info@electroshop.com">info@electroshop.com</a>
+      &copy; 2024 Cửa hàng Công nghệ. Tất cả các quyền được bảo lưu.
     </p>
   </footer>
   <script src="js/scripts.js"></script>

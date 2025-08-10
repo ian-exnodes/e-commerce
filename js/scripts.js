@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   renderProductDetails();
   renderCart();
   faqToggle();
-  bannerSlider();
+  bannerSlider(); // Bật chức năng banner
   updateCartCount();
 });
+
 
 // State variables for the product page
 let allProducts = [];
@@ -346,3 +347,26 @@ document.addEventListener("submit", (e) => {
   alert("Biểu mẫu đã được gửi");
   form.reset();
 });
+
+function faqToggle() {
+  document.querySelectorAll(".faq-item h3").forEach((h) => {
+    h.addEventListener("click", () => {
+      const item = h.parentElement;
+      item.classList.toggle("open");
+      const ans = item.querySelector(".faq-answer");
+      ans.style.display = item.classList.contains("open") ? "block" : "none";
+    });
+  });
+}
+
+// slider
+const slides = document.querySelectorAll('.main-slider .slide');
+const texts = document.querySelectorAll('.text-slider .text-slide');
+let idx = 0;
+setInterval(() => {
+  slides[idx].classList.remove('active');
+  texts[idx].classList.remove('active');
+  idx = (idx + 1) % slides.length;
+  slides[idx].classList.add('active');
+  texts[idx].classList.add('active');
+}, 4000);

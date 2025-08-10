@@ -271,3 +271,159 @@ button:hover {
       width: 100%;
   }
 }
+
+/* Contact Form Styling */
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #1e3a5f;
+  outline: none;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Banner Slider */
+.banner {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      background: linear-gradient(90deg, #a2d5f2 0%, #7ec8e3 50%, #5aa9d6 100%);
+      color: #00334e; /* xanh đậm để nổi trên nền pastel */
+      padding: 30px;
+      box-sizing: border-box;
+      align-items: center;
+    }
+    .banner-text {
+      flex: 1.2;
+    }
+    .banner-text h2 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .banner-text h1 {
+      margin: 0;
+      font-size: 50px;
+      color: #ff6f61; /* đỏ san hô đậm để nổi bật */
+    }
+    .banner-text p {
+      margin: 8px 0;
+      font-size: 17px;
+    }
+    .hotline {
+      background: #ffd166; /* vàng pastel */
+      color: #00334e;
+      padding: 8px 12px;
+      display: inline-block;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .banner-image {
+      flex: 0.8;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .banner-image img {
+      height: 200px; /* tăng kích thước ảnh */
+      width: 390px;
+      border-radius: 4px;
+    }
+
+     /* Slider */
+  .slider-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+    width: 100%;
+      height: 230px;
+      overflow: hidden;
+      position: relative;
+      background: #a2d5f2; /* xanh biển pastel */
+}
+.main-slider {
+  flex: 2;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.main-slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+.main-slider .slide.active { opacity: 1; }
+.text-slider {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.text-slide {
+  display: none;
+  text-align: left;
+   color: #ff6f61;
+}
+.text-slide.active { display: block; }
+.text-slide h2 { font-size: 1.8rem; color: #ff6f61; }
+.text-slide button {
+  margin-top: .5rem;
+  padding: .7rem 1.5rem;
+  background: #F39C12;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background .3s, transform .2s;
+}
+.text-slide button:hover {
+  background: #d88f0e;
+  transform: scale(1.05);
+}
