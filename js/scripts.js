@@ -38,21 +38,31 @@ async function initializeProductPage() {
     populateFilters();
     displayProducts();
 
-    // Add event listeners
-    brandFilter.addEventListener("change", () => {
-      currentPage = 1;
-      displayProducts();
-    });
-    categoryFilter.addEventListener("change", () => {
-      currentPage = 1;
-      displayProducts();
-    });
-    sortBy.addEventListener("change", () => {
-      currentPage = 1;
-      displayProducts();
-    });
-    searchInput.addEventListener("input", handleSearchInput);
-    searchInput.addEventListener("blur", () => setTimeout(() => suggestionsBox.style.display = 'none', 100));
+    // Add event listeners if controls exist
+    if (brandFilter) {
+      brandFilter.addEventListener("change", () => {
+        currentPage = 1;
+        displayProducts();
+      });
+    }
+    if (categoryFilter) {
+      categoryFilter.addEventListener("change", () => {
+        currentPage = 1;
+        displayProducts();
+      });
+    }
+    if (sortBy) {
+      sortBy.addEventListener("change", () => {
+        currentPage = 1;
+        displayProducts();
+      });
+    }
+    if (searchInput) {
+      searchInput.addEventListener("input", handleSearchInput);
+      searchInput.addEventListener("blur", () => setTimeout(() => {
+        if (suggestionsBox) suggestionsBox.style.display = 'none';
+      }, 100));
+    }
 
 
   } catch (error) {
@@ -65,22 +75,23 @@ function populateFilters() {
   const brandFilter = document.getElementById("brand-filter");
   const categoryFilter = document.getElementById("category-filter");
 
+  if (!brandFilter || !categoryFilter) return;
+
   const brands = ["all", ...new Set(allProducts.map(p => p.brand))];
   const categories = ["all", ...new Set(allProducts.map(p => p.category))];
 
-  brandFilter.innerHTML = brands.map(brand =>
-    `<option value="${brand}">${brand === 'all' ? 'Tất cả' : brand}</option>`
-  ).join('');
+  brandFilter.innerHTML = brands
+    .map(brand => `<option value="${brand}">${brand === 'all' ? 'Tất cả' : brand}</option>`)
+    .join('');
 
-  categoryFilter.innerHTML = categories.map(category =>
-    `<option value="${category}">${category === 'all' ? 'Tất cả' : category}</option>`
-  ).join('');
+  categoryFilter.innerHTML = categories
+    .map(category => `<option value="${category}">${category === 'all' ? 'Tất cả' : category}</option>`)
+    .join('');
 }
 
 
 function displayProducts() {
   const productList = document.getElementById("product-list");
-  const paginationContainer = document.getElementById("pagination-container");
 
   let filteredProducts = getFilteredAndSortedProducts();
 
@@ -114,10 +125,15 @@ function displayProducts() {
 }
 
 function getFilteredAndSortedProducts() {
-  const brandFilter = document.getElementById("brand-filter").value;
-  const categoryFilter = document.getElementById("category-filter").value;
-  const sortBy = document.getElementById("sort-by").value;
-  const searchTerm = document.getElementById("search-input").value.toLowerCase();
+  const brandFilterEl = document.getElementById("brand-filter");
+  const categoryFilterEl = document.getElementById("category-filter");
+  const sortByEl = document.getElementById("sort-by");
+  const searchInputEl = document.getElementById("search-input");
+
+  const brandFilter = brandFilterEl ? brandFilterEl.value : "all";
+  const categoryFilter = categoryFilterEl ? categoryFilterEl.value : "all";
+  const sortBy = sortByEl ? sortByEl.value : "";
+  const searchTerm = searchInputEl ? searchInputEl.value.toLowerCase() : "";
 
   let tempProducts = [...allProducts];
 
@@ -162,6 +178,7 @@ function getFilteredAndSortedProducts() {
 
 function renderPagination(totalPages) {
   const paginationContainer = document.getElementById("pagination-container");
+  if (!paginationContainer) return;
   paginationContainer.innerHTML = "";
 
   if (totalPages <= 1) return;
@@ -185,6 +202,7 @@ function renderPagination(totalPages) {
 function handleSearchInput() {
   const searchInput = document.getElementById("search-input");
   const suggestionsBox = document.getElementById("suggestions-box");
+  if (!searchInput || !suggestionsBox) return;
   const searchTerm = searchInput.value.toLowerCase();
 
   // Display products based on search term immediately
@@ -334,9 +352,18 @@ function faqToggle() {
 }
 
 function bannerSlider() {
-  const slider = document.getElementById("banner-slider");
-  if (!slider) return;
-  // Placeholder for banner slider logic
+  const slides = document.querySelectorAll(".main-slider .slide");
+  const textSlides = document.querySelectorAll(".text-slider .text-slide");
+  if (slides.length === 0) return;
+
+  let index = 0;
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    if (textSlides[index]) textSlides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+    if (textSlides[index]) textSlides[index].classList.add("active");
+  }, 5000);
 }
 
 document.addEventListener("submit", (e) => {
@@ -347,26 +374,3 @@ document.addEventListener("submit", (e) => {
   alert("Biểu mẫu đã được gửi");
   form.reset();
 });
-
-function faqToggle() {
-  document.querySelectorAll(".faq-item h3").forEach((h) => {
-    h.addEventListener("click", () => {
-      const item = h.parentElement;
-      item.classList.toggle("open");
-      const ans = item.querySelector(".faq-answer");
-      ans.style.display = item.classList.contains("open") ? "block" : "none";
-    });
-  });
-}
-
-// slider
-const slides = document.querySelectorAll('.main-slider .slide');
-const texts = document.querySelectorAll('.text-slider .text-slide');
-let idx = 0;
-setInterval(() => {
-  slides[idx].classList.remove('active');
-  texts[idx].classList.remove('active');
-  idx = (idx + 1) % slides.length;
-  slides[idx].classList.add('active');
-  texts[idx].classList.add('active');
-}, 4000);
